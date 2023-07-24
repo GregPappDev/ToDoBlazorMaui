@@ -1,5 +1,7 @@
 ﻿using Microsoft.Extensions.Logging;
+using Todo.Db;
 using ToDo.Data;
+using ToDo.Services;
 
 namespace ToDo;
 
@@ -22,8 +24,9 @@ public static class MauiProgram
 		builder.Logging.AddDebug();
 #endif
 
-		builder.Services.AddSingleton<WeatherForecastService>();
+        builder.Services.AddTransient<TaskRepository>();
+        builder.Services.AddTransient<TaskService>();
 
-		return builder.Build();
+        return builder.Build();
 	}
 }

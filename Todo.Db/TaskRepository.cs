@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Todo.Db
 {
-    internal class TaskRepository : BaseRepository<Task>
+    public class TaskRepository : BaseRepository<Task>
     {
     }
 }

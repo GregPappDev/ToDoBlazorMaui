@@ -28,7 +28,7 @@ namespace Todo.Db
         {
             using var db = GetDatabase();
             var collection = db.GetCollection<T>();
-            return collection.FindAll().ToList(;
+            return collection.FindAll().ToList();
         }
         public virtual T FindById(ObjectId id)
         {

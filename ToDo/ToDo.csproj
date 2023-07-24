@@ -57,4 +57,9 @@
       <Folder Include="wwwroot\Styles\" />
     </ItemGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\Todo.Db\Todo.Db.csproj" />
+      <ProjectReference Include="..\ToDo.Services\ToDo.Services.csproj" />
+    </ItemGroup>
+
 </Project>
